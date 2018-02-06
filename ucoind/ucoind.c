@@ -202,6 +202,7 @@ int main(int argc, char *argv[])
 
     SYSLOG_INFO("end");
 
+    jsonrpc_term();
     ln_db_term();
 
     return 0;

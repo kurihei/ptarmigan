@@ -109,10 +109,11 @@ void jsonrpc_init(const rpc_conf_t *pRpcConf)
     sprintf(rpc_url, "%s:%d", pRpcConf->rpcurl, pRpcConf->rpcport);
     sprintf(rpc_userpwd, "%s:%s", pRpcConf->rpcuser, pRpcConf->rpcpasswd);
     DBG_PRINTF("URL=%s\n", rpc_url);
-    #ifdef M_DBG_SHOWRPC
+#ifdef M_DBG_SHOWRPC
     DBG_PRINTF("rpcuser=%s\n", rpc_userpwd);
 #endif //M_DBG_SHOWRPC
 }
+
 
 void jsonrpc_term(void)
 {
